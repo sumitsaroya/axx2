@@ -5,17 +5,18 @@ import { getStorage } from "firebase/storage";
 import { getMessaging } from "firebase/messaging";
 
 // Initialize Firebase
-const app = initializeApp(
-  {
-    apiKey: "AIzaSyABF4m8puuckAImYCAF5HRFsZ_03J609LQ",
-    authDomain: "admin-panel-76a17.firebaseapp.com",
-    databaseURL: "https://admin-panel-76a17-default-rtdb.firebaseio.com",
-    projectId: "admin-panel-76a17",
-    storageBucket: "admin-panel-76a17.appspot.com",
-    messagingSenderId: "215078169100",
-    appId: "1:215078169100:web:61f5a720a5ff127b645c29",
-    measurementId: "G-7CXT51EQ6T"
-  }
+
+const firebaseConfig = {
+    apiKey: "AIzaSyDkieZcIMRukbAO5B8pvf3rpmgqt7YGMJ0",
+    authDomain: "webcam-7d18e.firebaseapp.com",
+    databaseURL: "https://webcam-7d18e-default-rtdb.firebaseio.com",
+    projectId: "webcam-7d18e",
+    storageBucket: "webcam-7d18e.appspot.com",
+    messagingSenderId: "357663373695",
+    appId: "1:357663373695:web:93c561bc8c46cdf2ca824a",
+    measurementId: "G-7D6XPEMD2X"
+  };
+
 )
 export const auth = getAuth(app)
 export const db = getFirestore(app)
